@@ -1,3 +1,4 @@
+'''
 def cc():
     a=input("Enter a string:")
 
@@ -8,3 +9,16 @@ def cc():
     print(a.swapcase())
 
 cc()
+'''
+
+def lower():
+    str=input("Enter a string:")
+    str1=""
+    for ch in str:
+        if ch>='A' and ch<+'z':
+            str1=str1 + chr(ord(ch)+32)
+        else:
+            str1=str1+ch
+    return str1
+
+print(lower())
